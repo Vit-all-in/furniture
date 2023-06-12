@@ -56,14 +56,28 @@ const popularSwiper = new Swiper('.popular__content', {
    breakpoints: {
       768: {
          slidesPerView: 3,
-         centeredSlides: false,
+         centeredSlides: true,
       },
 
       1028: {
          slidesPerView: 4,
          centeredSlides: true,
-      }
-   }
+      },
+   },
+
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+
+});
+
+document.querySelector('.swiper-button-prev').addEventListener('click', function () {
+      popularSwiper.slidePrev(); 
+});
+
+document.querySelector('.swiper-button-next').addEventListener('click', function () {
+   popularSwiper.slideNext(); 
 });
 
 class FAQ {
@@ -141,7 +155,13 @@ const sr = ScrollReveal({
    delay: 400,
 });
 
-sr.reveal('.home__content, .popular__container, .products__container, .footer, .join__bg' );
-sr.reveal('.home__title', { origin: 'bottom' });
-sr.reveal('.chosse__image, .features__image', { origin: 'left' });
-sr.reveal('.choose__content, .features__content', { origin: 'right' });
+sr.reveal('.home__content, .popular__container, .products__container, .footer, .join__bg');
+sr.reveal('.home__title', {
+   origin: 'bottom'
+});
+sr.reveal('.chosse__image, .features__image', {
+   origin: 'left'
+});
+sr.reveal('.choose__content, .features__content', {
+   origin: 'right'
+});

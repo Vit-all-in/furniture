@@ -478,6 +478,35 @@ img {
   display: flex;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: 20%;
+  transform: translateY(70%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.swiper-button-prev {
+  left: 30%;
+}
+
+.swiper-button-next {
+  right: 30%;
+}
+
 /*=============== CHOOSE ===============*/
 .choose__container {
   row-gap: 3rem;
