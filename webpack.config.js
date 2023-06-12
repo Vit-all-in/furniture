@@ -1,8 +1,9 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
    mode: 'development',
@@ -14,10 +15,19 @@ module.exports = {
    output: {
       filename: 'js/[name].js',
       path: path.resolve(__dirname, 'dist'),
+      publicPath: '/',
    },
 
    devServer: {
-      static: path.join(__dirname, 'dist'),
+      static: {
+         directory: path.join(__dirname, 'dist'),
+         watch: true,
+      },
+      watchFiles: [
+         path.join(__dirname, 'src/js/index.js'),
+         path.join(__dirname, 'src/css/style.css'),
+         path.join(__dirname, 'src/index.html')
+      ],
       compress: true,
       port: 9000,
       hot: true,
@@ -47,14 +57,27 @@ module.exports = {
       ]
    },
 
-   plugins: [
+   optimization: {
+      minimize: true,
+      minimizer: [
+         new TerserPlugin({
+            extractComments: false,
+         }),
+         new CssMinimizerPlugin(),
+      ],
+   },
 
+   plugins: [
       new MiniCssExtractPlugin({
-         filename: 'css/[name].css'
+         filename: 'css/[name].css',
       }),
+
       new HtmlWebpackPlugin({
-         template: './src/index.html'
+         template: './src/index.html',
+         filename: 'index.html',
+         inject: true,
       }),
+
       new CopyWebpackPlugin({
          patterns: [{
             from: 'src/assets',
@@ -62,12 +85,4 @@ module.exports = {
          }]
       })
    ],
-
-   optimization: {
-      minimizer: [
-         new TerserPlugin({
-            extractComments: true,
-         }),
-      ],
-   },
 };
