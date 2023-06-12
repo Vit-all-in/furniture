@@ -1,13 +1,654 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Furniture</title>
-<script defer src="js/main.js"></script><script defer src="js/style.js"></script><link href="css/style.css" rel="stylesheet"></head>
-<body>
-   <h1>Furniture</h1>
-   <h2>Hello</h2>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <title>Comfort</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  <script defer src="/js/main.js"></script><script defer src="/js/style.js"></script><link href="/css/style.css" rel="stylesheet"></head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> COM<span>FORT</span> </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Popular</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#choose" class="nav__link">Chosse</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Products</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+           <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__bg"></div>
+
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__data">
+              <h3 class="home__subtitle">"Create your home with us"</h3>
+
+              <h1 class="home__title">
+                Furniture that makes <br />
+                Your home even better
+              </h1>
+
+              <div class="home__buttons">
+                <a href="#" class="button"> Discover Now </a>
+                <a href="#" class="button__link">
+                  <i class="ri-play-circle-line"></i>Watch Video
+                </a>
+              </div>
+
+              <div class="home__info">
+                <div>
+                  <h3 class="home__info-title">9K <span>+</span></h3>
+                  <span class="home__info-subtitle">
+                    Premium <br />
+                    Product
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="home__info-title">2K <span>+</span></h3>
+                  <span class="home__info-subtitle">
+                    Happy <br />
+                    Customer
+                  </span>
+                </div>
+
+                <div>
+                  <h3 class="home__info-title">28 <span>+</span></h3>
+                  <span class="home__info-subtitle">
+                    Awards <br />
+                    Winning
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__image">
+            <div class="home__blob">
+              <img
+                src="assets/img/furniture.jpg"
+                alt="home image"
+                class="home__image lazyload"
+              />
+              <h1 class="home__blob-title">FURNITURE</h1>
+            </div>
+
+            <div class="home__shadow"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+        <div class="popular__container container">
+          <div class="popular__data">
+            <h2 class="section__title">Popular Product</h2>
+
+            <p class="popular__description">
+              Furniture that makes your home the perfect place
+            </p>
+          </div>
+
+          <div class="popular__content grid swiper-container">
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
+                <div class="popular__blob">
+                  <img
+                    src="assets/img/table.jpg"
+                    alt="popular image"
+                    class="popular__img lazyload"
+                  />
+                </div>
+
+                <h3 class="popular__name">Table</h3>
+
+                <span class="popular__subtitle">Table-elegant</span>
+                <h3 class="popular__price"><span>$</span>600</h3>
+                <button class="popular__button">
+                  <i class="ri-add-line"></i>
+                </button>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <div class="popular__blob">
+                  <img
+                    src="assets/img/bed.jpg"
+                    alt="popular image"
+                    class="popular__img lazyload"
+                  />
+                </div>
+
+                <h3 class="popular__name">Bed</h3>
+
+                <span class="popular__subtitle">Empress bed</span>
+                <h3 class="popular__price"><span>$</span>3000</h3>
+                <button class="popular__button">
+                  <i class="ri-add-line"></i>
+                </button>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <div class="popular__blob">
+                  <img
+                    src="assets/img/chair.jpg"
+                    alt="popular image"
+                    class="popular__img lazyload"
+                  />
+                </div>
+
+                <h3 class="popular__name">Chair</h3>
+
+                <span class="popular__subtitle">Treasure Chair</span>
+                <h3 class="popular__price"><span>$</span>2000</h3>
+                <button class="popular__button">
+                  <i class="ri-add-line"></i>
+                </button>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <div class="popular__blob">
+                  <img
+                    src="assets/img/sofa.jpg"
+                    alt="popular image"
+                    class="popular__img lazyload"
+                  />
+                </div>
+
+                <h3 class="popular__name">Sofa</h3>
+
+                <span class="popular__subtitle">Sofa Venetian</span>
+                <h3 class="popular__price"><span>$</span>2750</h3>
+                <button class="popular__button">
+                  <i class="ri-add-line"></i>
+                </button>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <div class="popular__blob">
+                  <img
+                    src="assets/img/wardrobe.jpg"
+                    alt="popular image"
+                    class="popular__img lazyload"
+                  />
+                </div>
+
+                <h3 class="popular__name">Wardrobe</h3>
+
+                <span class="popular__subtitle">Wardrobe Noir</span>
+                <h3 class="popular__price"><span>$</span>3750</h3>
+                <button class="popular__button">
+                  <i class="ri-add-line"></i>
+                </button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CHOOSE ====================-->
+      <section class="choose section" id="choose">
+        <div class="choose__container container grid">
+          <div class="choose__image">
+            <div class="choose__blob">
+              <img
+                src="assets/img/choose.jpg"
+                alt="choss img lazyload"
+                class="choose__img"
+              />
+              <h1 class="choose__blob-title">COMFORT</h1>
+            </div>
+          </div>
+
+          <div class="choose__content">
+            <div class="choose__data">
+              <h2 class="section__titel">Why Choose Us</h2>
+
+              <p class="choose__description">
+                "Style, quality and comfort - all in one place! Choose our
+                furniture store and create the perfect home of your dreams!"
+              </p>
+            </div>
+
+            <div class="choose__faq">
+              <div class="choose__faq-item">
+                <div class="choose__faq-header">
+                  <div class="choose__faq-icon">
+                    <i class="ri-add-line"></i>
+                  </div>
+                  <h3 class="choose__faq-title">New Design</h3>
+                </div>
+                <div class="choose__faq-content">
+                  <p class="choose__faq-description">
+                    "We create designs that provide your style and make your
+                    dreams come true. Designs that are comfortable, unique and
+                    inimitable - only in our furniture store!"
+                  </p>
+                </div>
+              </div>
+
+              <div class="choose__faq-item">
+                <div class="choose__faq-header">
+                  <div class="choose__faq-icon">
+                    <i class="ri-add-line"></i>
+                  </div>
+                  <h3 class="choose__faq-title">Original Production</h3>
+                </div>
+                <div class="choose__faq-content">
+                  <p class="choose__faq-description">
+                    "Create your cozy home with the best furniture store
+                    products! High quality, unique style and comfort - only with
+                    us!" furniture!
+                  </p>
+                </div>
+              </div>
+
+              <div class="choose__faq-item">
+                <div class="choose__faq-header">
+                  <div class="choose__faq-icon">
+                    <i class="ri-add-line"></i>
+                  </div>
+                  <h3 class="choose__faq-title">Production With Large Stock</h3>
+                </div>
+                <div class="choose__faq-content">
+                  <p class="choose__faq-description">
+                    "Our furniture store offers a wide range of products to suit
+                    all tastes and budgets! No matter what you are looking for -
+                    we always have something to buy!"
+                  </p>
+                </div>
+              </div>
+
+              <div class="choose__faq-item">
+                <div class="choose__faq-header">
+                  <div class="choose__faq-icon">
+                    <i class="ri-add-line"></i>
+                  </div>
+                  <h3 class="choose__faq-title">
+                    Proffessional Quality Control
+                  </h3>
+                </div>
+                <div class="choose__faq-content">
+                  <p class="choose__faq-description">
+                    "We pay attention to every detail and use a professional
+                    approach in the creation of our furniture products. Our team
+                    of experts ensures that every product you buy from us is
+                    made with precision and to the highest quality standards."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== FEATURES ====================-->
+      <section class="features section">
+        <div class="feature__container container grid">
+          <div class="features__image">
+            <div class="features__blob">
+              <img
+                src="assets/img/features.jpg"
+                alt="features img"
+                class="features__img"
+              />
+              <h1 class="features__blob-title">FEATURES</h1>
+            </div>
+          </div>
+
+          <div class="features__content">
+            <div class="features__data">
+              <h2 class="section__title">Latest Features</h2>
+
+              <p class="features__description">
+                Visit our store to see our latest items!
+              </p>
+            </div>
+
+            <div class="features__info">
+              <div class="features__info-card">
+                <h3 class="features__info-title">
+                  Online configurators and tools <br />
+                  to help you create your ideal home
+                </h3>
+              </div>
+              <div class="features__info-card">
+                <h3 class="features__info-title">
+                  Delivery and assembly of <br />
+                  furniture at home
+                </h3>
+              </div>
+              <div class="features__info-card">
+                <h3 class="features__info-title">
+                  Product <br />
+                  and Service Warranty
+                </h3>
+              </div>
+              <div class="features__info-card">
+                <h3 class="features__info-title">
+                  Providing samples of <br />
+                  materials for selection
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products">
+        <div class="products__container container grid">
+          <div class="products__data">
+            <h2 class="section__title">Our Products</h2>
+
+            <p class="products__description">Discover all our products</p>
+          </div>
+        </div>
+
+        <div class="products__content grid">
+          <article class="products__card">
+            <div class="prodicts__blob">
+              <img src="assets/img/Bedside_table.jpg" alt="product image" class="products__img" />
+
+              <h3 class="products__name">Bedside Table</h3>
+              <span class="products__subtitle">Comfortable nightstand for the bedroom</span>
+
+              <h3 class="products__price">
+                <span>$</span>300
+              </h3>
+            </div>
+
+            <button class="products__button">
+              <i class="ri-add-line"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <div class="prodicts__blob">
+              <img src="assets/img/cabinet_showcase.jpg" alt="product image" class="products__img" />
+
+              <h3 class="products__name">Cabinet Showcase</h3>
+              <span class="products__subtitle">Chic wardrobe-showcase for the living room</span>
+
+              <h3 class="products__price">
+                <span>$</span>2500
+              </h3>
+            </div>
+
+            <button class="products__button">
+               <i class="ri-add-line"></i>
+             </button>
+          </article>
+
+          <article class="products__card">
+            <div class="prodicts__blob">
+              <img src="assets/img/coffee_table.jpg" alt="product image" class="products__img" />
+
+              <h3 class="products__name">Coffee Table</h3>
+              <span class="products__subtitle">Round natural wood coffee table</span>
+
+              <h3 class="products__price">
+                <span>$</span>400
+              </h3>
+            </div>
+
+            <button class="products__button">
+               <i class="ri-add-line"></i>
+             </button>
+          </article>
+
+          <article class="products__card">
+            <div class="prodicts__blob">
+              <img src="assets/img/Kitchen_Cabinet.jpg" alt="product image" class="products__img" />
+
+              <h3 class="products__name">Kitchen Cabinet</h3>
+              <span class="products__subtitle">Multifunctional kitchen cabinet with drawers</span>
+
+              <h3 class="products__price">
+                <span>$</span>1200
+              </h3>
+            </div>
+
+            <button class="products__button">
+               <i class="ri-add-line"></i>
+             </button>
+          </article>
+
+          <article class="products__card">
+            <div class="prodicts__blob">
+              <img src="assets/img/kitchen_chair.jpg" alt="product image" class="products__img" />
+
+              <h3 class="products__name">Kitchen Chair</h3>
+              <span class="products__subtitle">Kitchen chair with armrests</span>
+
+              <h3 class="products__price">
+                <span>$</span>100
+              </h3>
+            </div>
+
+            <button class="products__button">
+               <i class="ri-add-line"></i>
+             </button>
+          </article>
+
+          <article class="products__card">
+            <div class="prodicts__blob">
+              <img src="assets/img/mini_bed.jpg" alt="product image" class="products__img" />
+
+              <h3 class="products__name">Bed</h3>
+              <span class="products__subtitle">Natural wood bed with high headboard</span>
+
+              <h3 class="products__price">
+                <span>$</span>5000
+              </h3>
+            </div>
+
+            <button class="products__button">
+               <i class="ri-add-line"></i>
+             </button>
+          </article>
+
+          <article class="products__card">
+            <div class="prodicts__blob">
+              <img src="assets/img/mini_table.jpg" alt="product image" class="products__img" />
+
+              <h3 class="products__name">Mini Table</h3>
+              <span class="products__subtitle">
+               Wooden nightstand for the bedroom</span>
+
+              <h3 class="products__price">
+                <span>$</span>200
+              </h3>
+            </div>
+
+            <button class="products__button">
+               <i class="ri-add-line"></i>
+             </button>
+          </article>
+
+          <article class="products__card">
+            <div class="prodicts__blob">
+              <img src="assets/img/sofa_with_cushions.jpg" alt="product image" class="products__img" />
+
+              <h3 class="products__name">Sofa</h3>
+              <span class="products__subtitle">Sofa made of genuine leather with soft cushions</span>
+
+              <h3 class="products__price">
+                <span>$</span>7000
+              </h3>
+            </div>
+
+            <button class="products__button">
+               <i class="ri-add-line"></i>
+             </button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== JOIN ====================-->
+      <section class="join section">
+         <div class="join__container container grid">
+            <div class="join__bg grid">
+               <div class="join__image">
+                  <div class="join__blob">
+                     <img src="assets/img/join.jpg" alt="join" class="join__img">
+
+                     <h2 class="join__blob-title">JOIN</h2>
+                  </div>
+               </div>
+
+               <div class="join__content grid">
+                  <div class="join__data">
+                     <h2 class="section__title">Get Started</h2>
+
+                     <p class="join__description">
+                        Do not miss it, join us <br> and get the best deals
+                     </p>
+                  </div>
+
+                  <form action="#" class="join__form">
+                     <input type="email" class="join__input" placeholder="Enter your email">
+
+                     <button class="button join__button">
+                        Join Now
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div>
+            <a href="#" class="footer__logo">
+               COM<span>FORT</span>
+            </a>
+
+            <div class="footer__description">
+               We have a vision to make <br>
+               lighting evenly distibuted <br>
+               across the globe.
+            </div>
+          </div>
+
+          <div class="footer__data grid">
+            <div>
+               <h3 class="footer__title">About</h3>
+
+               <ul class="footer__links">
+                  <li>
+                     <a href="#" class="footer__link">About Us</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="footer__link">Features</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="footer__link">News & blog</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div>
+               <h3 class="footer__title">Movement</h3>
+
+               <ul class="footer__links">
+                  <li>
+                     <a href="#" class="footer__link">What Comfort</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="footer__link">Support Us</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div>
+               <h3 class="footer__title">Company</h3>
+
+               <ul class="footer__links">
+                  <li>
+                     <a href="#" class="footer__link">Why Comfort</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="footer__link">Capital</a>
+                  </li>
+
+                  <li>
+                     <a href="#" class="footer__link">Security</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div>
+               <h3 class="footer__title">Follow Us</h3>
+
+               <div class="footer__social">
+                  <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
+                     <i class="ri-instagram-fill"></i>
+                  </a>
+                  <a href="https:://www.twitter.com" target="_blank" class="footer__social-link">
+                     <i class="ri-twitter-fill"></i>
+                  </a>
+               </div>
+               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__terms">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+     </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+  </body>
 </html>
